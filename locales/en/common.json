@@ -1,0 +1,11 @@
+{
+  "welcome-message": "This message is taken from common namespace",
+  "loading": "Loading...",
+  "i-label": "I'm a label",
+  "footer-title": "Footer",
+  "refetch": "Refetch",
+  "game": "Game",
+  "ship": "Ship",
+  "SSR": "Server side rendering",
+  "SSG": "Static generation"
+}

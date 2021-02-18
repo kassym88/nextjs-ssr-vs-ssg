@@ -1,0 +1,6 @@
+{
+  "message-from-locale-testing-page": "Это сообщение из другого пространства имен",
+  "plural-test_0": "{{count}} манул",
+  "plural-test_1": "{{count}} манула",
+  "plural-test_2": "{{count}} манулов"
+}

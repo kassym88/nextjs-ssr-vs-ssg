@@ -1,0 +1,43 @@
+.component {
+  color: #0070f3;
+  font-size: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  flex-basis: 45%;
+  margin: 1rem;
+  padding: 1.5rem;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.header {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

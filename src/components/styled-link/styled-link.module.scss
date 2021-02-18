@@ -1,0 +1,17 @@
+.primary,
+.secondary {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary {
+  color: #fff;
+  background-color: #000;
+}
+
+.secondary {
+  color: #000;
+  background-color: transparent;
+}

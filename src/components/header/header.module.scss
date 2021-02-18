@@ -1,0 +1,47 @@
+@import "../../styles/responsive";
+
+.header {
+  display: grid;
+  grid-template-rows: [row1] auto;
+  grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 30px 0 10px;
+  background-color: #757575;
+}
+
+.language {
+  justify-self: end;
+  padding-right: 20px;
+}
+
+.auth {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+}
+
+.links {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.link {
+  color: #fff;
+  cursor: pointer;
+}
+
+.authButton {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.sportsAndBettings {
+  @include d-tb-none();
+  @include d-ds-none();
+
+  border: 1px solid red;
+}

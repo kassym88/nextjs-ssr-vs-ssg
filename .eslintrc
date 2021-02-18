@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["@typescript-eslint", "import"],
+  "parserOptions": {
+    "tsconfigRootDir": "./",
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-prototype-builtins": "off",
+    "react/jsx-props-no-spreading": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": [
+        "**/*.{ts,tsx}"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier/@typescript-eslint"
+      ],
+      "rules": {
+        "react/require-default-props": "off",
+        "react/no-array-index-key": "off"
+      }
+    },
+    {
+      "files": [
+        "**/*.{stories,test}.{ts,tsx,js,jsx}",
+        "**/storybook/**/*.{ts,tsx,js,jsx}"
+      ],
+      "rules": {
+        "import/no-extraneous-dependencies": "off",
+        "@typescript-eslint/no-unsafe-call": "off"
+      }
+    }
+  ]
+}

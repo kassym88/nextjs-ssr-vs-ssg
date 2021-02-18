@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Test
+    </h1>
+    <div>
+      <a
+        href="test-link-1"
+      >
+        <h3>
+          test-name-1
+        </h3>
+        <p>
+          <strong>
+            Launch Date: 
+          </strong>
+          10/24/2020
+        </p>
+      </a>
+      <a
+        href="test-link-2"
+      >
+        <h3>
+          test-name-2
+        </h3>
+        <p>
+          <strong>
+            Launch Date: 
+          </strong>
+          10/24/2020
+        </p>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

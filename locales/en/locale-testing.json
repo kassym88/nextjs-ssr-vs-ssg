@@ -1,0 +1,5 @@
+{
+  "message-from-locale-testing-page": "This message is from different namespace",
+  "plural-test": "{{count}} manul",
+  "plural-test_plural": "{{count}} manuls"
+}

@@ -1,0 +1,82 @@
+//mobile breakpoint
+$mb-breakpoint: 600px;
+//tablet breakpoint
+$tb-breakpoint: $mb-breakpoint;
+//tablet landscape breakpoint
+//$tb-ln-breakpoint: 768px;
+$tb-ln-breakpoint: $tb-breakpoint;
+//desktop breakpoint
+//$ds-breakpoint: 992px;
+$ds-breakpoint: $tb-ln-breakpoint;
+
+@mixin mobileOnly() {
+  @media (max-width: $tb-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tabletOnly() {
+  @media (min-width: $tb-breakpoint) and (max-width: $tb-ln-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tabletLandscapeOnly() {
+  @media (min-width: $tb-ln-breakpoint) and (max-width: $ds-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktopOnly() {
+  @media (min-width: $ds-breakpoint) {
+    @content;
+  }
+}
+
+.d-mb-none {
+  @include mobileOnly() {
+    display: none !important;
+  }
+}
+
+.d-tb-none {
+  @include tabletOnly() {
+    display: none !important;
+  }
+}
+
+.d-tb-ln-none {
+  @include tabletLandscapeOnly() {
+    display: none !important;
+  }
+}
+
+.d-ds-none {
+  @include desktopOnly() {
+    display: none !important;
+  }
+}
+
+@mixin d-mb-none() {
+  @include mobileOnly() {
+    display: none !important;
+  }
+}
+
+@mixin d-tb-none() {
+  @include tabletOnly() {
+    display: none !important;
+  }
+}
+
+@mixin d-tb-ln-none() {
+  @include tabletLandscapeOnly() {
+    display: none !important;
+  }
+}
+
+@mixin d-ds-none() {
+  @include desktopOnly() {
+    display: none !important;
+  }
+}
